@@ -6,9 +6,9 @@ import * as THREE from "three";
 import { Material, Mesh, Texture, TextureLoader, Vector3 } from "three";
 
 //@ts-ignore
-import fragment from "./shaders/fragment.glsl";
+import fragment from "../shaders/fragment.glsl";
 //@ts-ignore
-import vertex from "./shaders/vertex.glsl";
+import vertex from "../shaders/vertex.glsl";
 
 interface myMaterial extends Material {
   uniforms: {

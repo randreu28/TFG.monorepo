@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import Shader from "./Shader";
-import Loading from "./Loading";
+import Shader from "./components/Shader";
+import Loading from "./components/Loading";
 
 export default function App() {
   return (
