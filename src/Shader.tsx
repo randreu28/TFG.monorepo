@@ -27,54 +27,32 @@ interface myMesh extends Mesh {
 export default function Model() {
   const ref = useRef<myMesh>(null!);
 
+  let textureControlOptions = {
+    none: 0,
+    bitmap1: 1,
+    bitmap2: 2,
+    bitmap3: 3,
+    bitmap4: 4,
+    bitmap5: 5,
+    bitmap6: 6,
+    bitmap7: 7,
+    bitmap8: 8,
+    bitmap9: 9,
+    bitmap10: 10,
+  };
+
   const [activeTextures, setActiveTextures] = useControls("Textures", () => ({
     iChannel0: {
       value: 0,
-      options: {
-        none: 0,
-        bitmap1: 1,
-        bitmap2: 2,
-        bitmap3: 3,
-        bitmap4: 4,
-        bitmap5: 5,
-        bitmap6: 6,
-        bitmap7: 7,
-        bitmap8: 8,
-        bitmap9: 9,
-        bitmap10: 10,
-      },
+      options: textureControlOptions,
     },
     iChannel1: {
       value: 2,
-      options: {
-        none: 0,
-        bitmap1: 1,
-        bitmap2: 2,
-        bitmap3: 3,
-        bitmap4: 4,
-        bitmap5: 5,
-        bitmap6: 6,
-        bitmap7: 7,
-        bitmap8: 8,
-        bitmap9: 9,
-        bitmap10: 10,
-      },
+      options: textureControlOptions,
     },
     iChannel2: {
       value: 0,
-      options: {
-        none: 0,
-        bitmap1: 1,
-        bitmap2: 2,
-        bitmap3: 3,
-        bitmap4: 4,
-        bitmap5: 5,
-        bitmap6: 6,
-        bitmap7: 7,
-        bitmap8: 8,
-        bitmap9: 9,
-        bitmap10: 10,
-      },
+      options: textureControlOptions,
     },
     1: buttonGroup({
       label: "Presets",
