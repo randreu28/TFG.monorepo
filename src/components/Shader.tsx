@@ -3,24 +3,23 @@ import { extend, useFrame, useLoader } from "@react-three/fiber";
 import { buttonGroup, useControls } from "leva";
 import { useRef } from "react";
 import * as THREE from "three";
-import { Material, Mesh, Texture, TextureLoader, Vector3 } from "three";
 
 //@ts-ignore
 import fragment from "../shaders/fragment.glsl";
 //@ts-ignore
 import vertex from "../shaders/vertex.glsl";
 
-interface myMaterial extends Material {
+interface myMaterial extends THREE.Material {
   uniforms: {
     iTime: { value: number };
-    iResolution: { value: Vector3 };
-    iChannel0: { value: Texture };
-    iChannel1: { value: Texture };
-    iChannel2: { value: Texture };
+    iResolution: { value: THREE.Vector3 };
+    iChannel0: { value: THREE.Texture };
+    iChannel1: { value: THREE.Texture };
+    iChannel2: { value: THREE.Texture };
   };
 }
 //For uniform's type saftey
-interface myMesh extends Mesh {
+interface myMesh extends THREE.Mesh {
   material: myMaterial;
 }
 
@@ -89,10 +88,10 @@ export default function Model() {
     speed: { value: 0.1, min: 0, max: 2, step: 0.01 },
   });
 
-  let textures: Texture[] = [];
+  let textures: THREE.Texture[] = [];
 
   for (let i = 1; i <= 10; i++) {
-    textures[i] = useLoader(TextureLoader, `bitmap${i}.jpg`);
+    textures[i] = useLoader(THREE.TextureLoader, `bitmap${i}.jpg`);
   }
 
   const ShaderMaterial = shaderMaterial(
