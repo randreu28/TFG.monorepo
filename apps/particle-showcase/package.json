@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port=3000",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "model": "blender modeling/king.blend --background --python modeling/export_glb.py -- public/models/king.glb && blender modeling/lightbulb.blend --background --python modeling/export_glb.py -- public/models/lightbulb.glb && blender modeling/rocket.blend --background --python modeling/export_glb.py -- public/models/rocket.glb",
