@@ -1,2 +1,4 @@
-import * as React from "react";
-export * from "./Button";
+import Button from "./components/Button";
+import "./index.css";
+
+export { Button };
