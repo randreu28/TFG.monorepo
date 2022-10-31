@@ -1,3 +1,10 @@
 module.exports = {
-  /* No extra eslint rules */
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  parser: "@typescript-eslint/parser",
+  env: {
+    es6: true,
+  },
 };
