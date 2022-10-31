@@ -1,4 +1,3 @@
-import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useState } from "react";
 import PermGranter from "./components/PermGranter";
@@ -11,7 +10,6 @@ export default function App() {
     return (
       <div className="h-screen w-screen bg-gray-900 fixed">
         <Canvas>
-          <OrbitControls />
           <Shader stream={stream} />
         </Canvas>
       </div>
