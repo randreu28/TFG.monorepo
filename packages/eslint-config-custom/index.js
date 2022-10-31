@@ -1,7 +1,19 @@
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
+  env: {
+    node: true,
+  },
+  parser: "@typescript-eslint/parser",
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
+  plugins: ["@typescript-eslint"],
+  parserOptions: {
+    sourceType: "module",
+    ecmaVersion: 2020,
+  },
   rules: {
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
   },
 };
