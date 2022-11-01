@@ -1,18 +1,27 @@
-# Turborepo starter
+# 🚧 TFG 🚧
 
-This is an official Yarn v1 starter turborepo.
+🚨 Warning: This repository is under heavy development! 
+
+> It is meant to be my thesis, which will be a recolection of [Three.js](https://threejs.org/) projects made with modern JavaScript tools and frameworks.
 
 ## What's inside?
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/) as a package manager. It includes the following packages/apps:
+This turborepo has been bootstrapped with [TurboRepo](https://turbo.build/), a build system for JavaScript/TypeScript. It uses [Yarn](https://classic.yarnpkg.com/) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- [**Buckle up**](https://tfg-buckle-up-rose.vercel.app/): a [Vite](https://vitejs.dev/) app
+- [**Particle showcase**](https://tfg-particle-showcase.vercel.app): another [Vite](https://vitejs.dev/) app
+- [**Talking stars**](https://tfg-talking-stars-nine.vercel.app/): another [Vite](https://vitejs.dev/) app
+- ...to be continued
+
+ <br>
+
+- **eslint-config-custom**: *eslint* configurations used throughout the monorepo
+- **tailwind-config**: *tailwind.config*'s used throughout the monorepo
+- **tsconfig**: *tsconfig.json*'s used throughout the monorepo
+- **viteconfig**: *vite.config*'s used throughout the Vite apps
+- **ui**: a stub *React component library* accesable for all the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -24,23 +33,31 @@ This turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
+### Set up a developement environment
+
+To develop all apps and packages, run the following command:
+
+```
+git clone https://github.com/randreu28/TFG.git
+cd tfg
+yarn
+yarn run dev 
+```
+
+If you want to focus on only one app, run:
+
+```
+npx turbo run dev --filter <app name>
+```
+
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run build
 ```
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-yarn run dev
-```
 
 ### Remote Caching
 
@@ -49,7 +66,7 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
+cd tfg
 npx turbo login
 ```
 
@@ -63,7 +80,7 @@ npx turbo link
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
+Each has it's own README to get started. For more about the power of Turborepo:
 
 - [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
 - [Caching](https://turborepo.org/docs/core-concepts/caching)
