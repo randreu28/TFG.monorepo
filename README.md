@@ -1,8 +1,7 @@
-# 🚧 TFG 🚧
+# 🚨 TFG monorepo (depricated) 🚨
 
-🚨 Warning: This repository is under heavy development! 
 
-> It is meant to be my thesis, which will be a recolection of [Three.js](https://threejs.org/) projects made with modern JavaScript tools and frameworks.
+> This monorepo was meant to be part of my [bachelor's thesis](https://tfg-docs.vercel.app/). It was later discontinuated.
 
 ## What's inside?
 
@@ -13,7 +12,6 @@ This turborepo has been bootstrapped with [TurboRepo](https://turbo.build/), a b
 - [**Buckle up**](https://tfg-buckle-up-rose.vercel.app/): a [Vite](https://vitejs.dev/) app
 - [**Particle showcase**](https://tfg-particle-showcase.vercel.app): another [Vite](https://vitejs.dev/) app
 - [**Talking stars**](https://tfg-talking-stars-nine.vercel.app/): another [Vite](https://vitejs.dev/) app
-- ...to be continued
 
  <br>
 
@@ -38,8 +36,8 @@ This turborepo has some additional tools already setup for you:
 To develop all apps and packages, run the following command:
 
 ```
-git clone https://github.com/randreu28/TFG.git
-cd tfg
+git clone https://github.com/randreu28/TFG.monorepo.git
+cd TFG.monorepo
 yarn
 yarn run dev 
 ```
